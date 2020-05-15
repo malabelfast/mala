@@ -1,0 +1,79 @@
+body#product1 {
+
+/*HERO IMAGE*/
+.product_header_img {
+    background: url(.././img/products/product1/product.png);
+}
+
+
+/*PRODUCT QUALITIES ICONS*/
+.gridof4_container {
+        .quality:nth-child(1) {
+            background: url(.././img/products/product1/quality1.png);
+            background-size: cover;
+        }
+
+        .quality:nth-child(2) {
+            background: url(.././img/products/product1/quality2.png);
+            background-size: cover;
+        }
+
+        .quality:nth-child(3) {
+            background: url(.././img/products/product1/quality3.png);
+            background-size: cover;
+        }
+
+        .quality:nth-child(4) {
+            background: url(.././img/products/product1/quality4.png);
+            background-size: cover;
+        }
+    }
+
+
+/*FEATURE*/
+
+.feature {
+        .feature_img {
+            background: url(.././img/products/product1/feature1.png);
+            background-size: cover;
+        }
+    }
+
+
+/*BROWSE OTHER PRODUCTS*/
+    .gridof3 {
+        .image-link::after {
+            display: none;
+        }
+
+        .image-link:nth-child(1) {
+            background: url(.././img/products/product1/gridof3-1-1.png);
+            background-size: cover;
+
+            &::after {
+                content: "products/product1.html";
+            }
+        }
+
+        .image-link:nth-child(2) {
+            background: url(.././img/products/product1/gridof3-1-2.png);
+            background-size: cover;
+
+            &::after {
+                content: "products/product2.html";
+            }
+        }
+
+        .image-link:nth-child(3) {
+            background: url(.././img/products/product1/gridof3-1-3.png);
+            background-size: cover;
+
+            &::after {
+                content: "products/product3.html";
+            }
+        }
+    }
+
+
+}
+

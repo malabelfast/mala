@@ -1,0 +1,47 @@
+body#shop {
+    .gridof3 {
+        .image-link::after {
+            display: none;
+        }
+
+        .image-link:nth-child(1) {
+                background: url(.././img/shop/gridof3-1-1.png);
+                background-size: cover;
+
+                &::before{
+                @include title('THE BUM BAG');
+                }
+
+                &::after {
+                    content: "products/product1.html";
+                }
+            }
+
+        .image-link:nth-child(2) {
+            background: url(.././img/shop/gridof3-1-2.png);
+            background-size: cover;
+
+            &::before{
+                @include title('THE PHONE CASE');
+                }
+
+            &::after {
+                content: "products/product2.html";
+            }
+        }
+
+        .image-link:nth-child(3) {
+            background: url(.././img/shop/gridof3-1-3.png);
+            background-size: cover;
+
+            &::before{
+                @include title('THE PENCIL POUCH');
+                }
+
+            &::after {
+                content: "products/product3.html";
+            }
+        }
+    }
+}
+

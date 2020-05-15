@@ -1,0 +1,26 @@
+
+/*PRODUCT*/
+.product_header_img {
+    background-size: cover;
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+    border-radius: 200px;
+    margin-bottom: 1.5rem;
+}
+
+.gridof4_container {
+    .d-flex {
+        width: 50vw;
+        max-width: 30rem;
+    }
+
+    .quality {
+        background-size: cover;
+        height: 10vw;
+        width: 10vw;
+        border-radius: 100px;
+        max-width: 6rem;
+        max-height: 6rem;
+    }
+}

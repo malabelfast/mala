@@ -1,0 +1,125 @@
+body#about {
+    .feature {
+        /*.image-link::after {
+            display: none;
+        }
+
+       .image-link::after {
+            content: "products/product1.html";
+        }*/
+
+        .feature_img {
+            background: url(.././img/about/feature1.png);
+            background-size: cover;
+        }
+    }
+
+    .interactive {
+        .interactive_container {
+            background: url(.././img/about/interactiveportrait.png);
+            background-size: cover;
+            @include tablet {
+            background: url(.././img/about/interactivelandscape.png); 
+            }
+        }
+
+        #left {
+            .image-link::after {
+                display: none;
+            }
+
+            .image-link:nth-child(1) {
+                background: url(.././img/icon/instagram.png);
+                background-size: cover;
+
+                &::after {
+                    content: "products/product1.html";
+                }
+            }
+
+            .image-link:nth-child(2) {
+                background: url(.././img/icon/facebook.png);
+                background-size: cover;
+
+                &::after {
+                    content: "https://www.2.com";
+                }
+            }
+
+            .image-link:nth-child(3) {
+                background: url(.././img/icon/linkedin.png);
+                background-size: cover;
+
+                &::after {
+                    content: "https://www.3.com";
+                }
+            }
+        }
+
+        #center {
+            .image-link::after {
+                display: none;
+            }
+
+            .image-link:nth-child(1) {
+                background: url(.././img/icon/instagram.png);
+                background-size: cover;
+
+                &::after {
+                    content: "products/product1.html";
+                }
+            }
+
+            .image-link:nth-child(2) {
+                background: url(.././img/icon/facebook.png);
+                background-size: cover;
+
+                &::after {
+                    content: "https://www.2.com";
+                }
+            }
+
+            .image-link:nth-child(3) {
+                background: url(.././img/icon/linkedin.png);
+                background-size: cover;
+
+                &::after {
+                    content: "https://www.3.com";
+                }
+            }
+        }
+
+        #right {
+            .image-link::after {
+                display: none;
+            }
+
+            .image-link:nth-child(1) {
+                background: url(.././img/icon/instagram.png);
+                background-size: cover;
+
+                &::after {
+                    content: "products/product1.html";
+                }
+            }
+
+            .image-link:nth-child(2) {
+                background: url(.././img/icon/facebook.png);
+                background-size: cover;
+
+                &::after {
+                    content: "https://www.2.com";
+                }
+            }
+
+            .image-link:nth-child(3) {
+                background: url(.././img/icon/linkedin.png);
+                background-size: cover;
+
+                &::after {
+                    content: "https://www.3.com";
+                }
+            }
+        }
+    }
+}

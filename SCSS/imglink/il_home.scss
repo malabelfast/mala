@@ -1,0 +1,123 @@
+body#home {
+    .feature {
+        &.first {
+            .image-link::after {
+                display: none;
+            }
+            .image-link::after {
+                    content: "products/product1.html";
+            }
+            .feature_img {
+                background: url(.././img/home/feature1.png);
+                background-size: cover;
+            }
+        }
+
+        &.second {
+            .image-link::after {
+                display: none;
+            }
+            .image-link::after {
+                    content: "about.html";
+            }
+            .feature_img {
+                background: url(.././img/home/feature2.png);
+                background-size: cover;
+            }
+        }
+    }
+
+
+    .gridof3 {
+        &.first {
+            .image-link::after {
+                display: none;
+            }
+
+            .image-link:nth-child(1) {
+                background: url(.././img/home/gridof3-1-1.png);
+                background-size: cover;
+
+                &::before{
+                @include title('THE BUM BAG');
+                }
+
+                &::after {
+                    content: "products/product1.html";
+                }
+            }
+
+            .image-link:nth-child(2) {
+                background: url(.././img/home/gridof3-1-2.png);
+                background-size: cover;
+
+                &::before{
+                @include title('THE PHONE CASE');
+                }
+
+                &::after {
+                    content: "products/product2.html";
+                }
+            }
+
+            .image-link:nth-child(3) {
+                background: url(.././img/home/gridof3-1-3.png);
+                background-size: cover;
+
+                &::before{
+                @include title('THE PENCIL POUCH');
+                }
+
+                &::after {
+                    content: "products/product3.html";
+                }
+            }
+        }
+        &.second {
+            .image-link::after {
+                display: none;
+            }
+
+            .image-link:nth-child(1) {
+                background: url(.././img/home/gridof3-2-1.png);
+                background-size: cover;
+
+                &::before{
+                @include title('SAMANTA RADEK');
+                }
+
+                &::after {
+                    content: "./about.html";
+                }
+            }
+
+            .image-link:nth-child(2) {
+                background: url(.././img/home/gridof3-2-2.png);
+                background-size: cover;
+
+                &::before{
+                @include title('KATIE IRELAND');
+                }
+
+                &::after {
+                    content: "./about.html";
+                }
+            }
+
+            .image-link:nth-child(3) {
+                background: url(.././img/home/gridof3-2-3.png);
+                background-size: cover;
+
+                &::before{
+                @include title('RACHEL OK');
+                }
+
+                &::after {
+                    content: "./about.html";
+                }
+            }
+        }
+    }
+}
+
+

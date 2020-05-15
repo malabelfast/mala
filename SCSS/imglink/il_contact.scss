@@ -1,0 +1,35 @@
+body#contact {
+    .gridof3 {
+        .image-link::after {
+            display: none;
+        }
+
+        .image-link:nth-child(1) {
+            background: url(.././img/icon/instagram.png);
+            background-size: cover;
+
+            &::after {
+                content: "https://www.instagram.com/malabelfast";
+            }
+        }
+
+        .image-link:nth-child(2) {
+            background: url(.././img/icon/facebook.png);
+            background-size: cover;
+
+            &::after {
+                content: "https://www.facebook.com/malaecobags/";
+            }
+        }
+
+        .image-link:nth-child(3) {
+            background: url(.././img/icon/email.png);
+            background-size: cover;
+
+            &::after {
+                content: "mailto:hello@malabelfast.com";
+            }
+        }
+    }
+}
+

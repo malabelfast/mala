@@ -1,0 +1,26 @@
+#contact {
+    .gridof3 .row {
+        margin-top: 100px;
+        max-width: 100%;
+        width: 80vw;
+
+        @include laptop {
+            width: 60vw;
+        }
+
+        .mt-4 {
+            width: 20vw;
+            height: 20vw;
+
+            @include tablet {
+                width: 10rem;
+                height: 10rem;
+            }
+
+            @include laptop {
+                width: 12rem;
+                height: 12rem;
+            }
+        }
+    }
+}

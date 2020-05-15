@@ -1,0 +1,64 @@
+.home_header {
+    .home_header_container {
+        height: 100vh;
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .home_header_title {
+        margin-top: 30vh;
+    }
+}
+
+
+.feature {
+    .feature_container {
+        background-color: $pri;
+        padding: 2rem;
+        z-index: 1;
+
+        & p {
+            margin-bottom: 0 !important;
+        }
+
+        .btn {
+            color: #ffffff;
+        }
+    }
+
+    .feature_img {
+        background: url(https://source.unsplash.com/1600x900/?nature);
+        background-size: cover;
+        height: 70vw;
+        width: 70vw;
+        position: relative;
+        margin-top: -4rem;
+    }
+}
+
+
+.banner {
+    .banner_container {
+        padding: 6rem;
+        color: white;
+        background-color: $sec;
+        background-image: url(../img/foliage/branchl.png);
+        background-repeat: no-repeat;
+        background-blend-mode: soft-light;
+    }
+}
+
+
+
+.gridof3 {
+    .col-12 {
+        height: 80vw;
+        margin-bottom: 100px;
+
+        @include tablet {
+            margin-bottom: 20px;
+        }
+    }
+}

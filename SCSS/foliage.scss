@@ -1,0 +1,12 @@
+body::before {
+    content: "";
+    background-image: url(../img/foliage/monsterar.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    margin-left: 0;
+    z-index: -3;
+    opacity: 0.2;
+}

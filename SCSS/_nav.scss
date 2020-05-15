@@ -1,0 +1,18 @@
+nav{
+    background: white;
+    box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+
+    &.navbar {
+    	position: fixed;
+        width: 100%;
+        z-index: 9999;
+    }
+}
+
+ul.navbar-nav {
+    margin-left: auto;
+}
+
+a.navbar-brand {
+    font-size: 1.5rem;
+}

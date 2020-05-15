@@ -1,0 +1,81 @@
+/*MEDIA QUERIES*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) {
+    h1 {
+        font-size: 5rem !important;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media only screen and (min-width: 768px) {
+    .px-6 {
+        padding: 0 7rem;
+    }
+
+    .left-0 {
+        left: -7rem;
+    }
+
+    .page_container_escape {
+        margin-left: -7rem;
+        margin-right: -7rem;
+    }
+
+    .interactive .interactive_container .col-12 {
+        height: 600px;
+    }
+
+    .feature {
+        .feature_container {
+            padding: 7rem;
+
+        }
+
+        .feature_img {
+            height: 45vw;
+            width: 45vw;
+            margin-top: -12rem;
+        }
+    }
+
+    .gridof3 {
+        .col-12 {
+            height: 20vw;
+        }
+    }
+
+    .interactive {
+        #left,
+        #center,
+        #right {
+            .w3-modal {
+                width: 70vw;
+                height: 400px;
+                padding: 5rem 7rem;
+                margin: 100px auto 0;
+            }
+        }
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .gridof4_container {
+        .row {
+            width: 25vw;
+        }
+
+        .img {
+            height: 5vw;
+            width: 5vw;
+        }
+    }
+
+    .navbar {
+        padding: 0rem 1rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
