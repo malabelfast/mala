@@ -41,12 +41,15 @@
 
 .banner {
     .banner_container {
-        padding: 6rem;
+        padding: 3rem;
         color: white;
         background-color: $sec;
         background-image: url(../img/foliage/branchl.png);
         background-repeat: no-repeat;
         background-blend-mode: soft-light;
+        @include tablet {
+        padding: 6rem;
+        }
     }
 }
 
