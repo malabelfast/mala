@@ -11,6 +11,13 @@
     button {
         background: none;
         border: none;
+
+        &:nth-child(1) {
+            order: 3;
+            @include tablet {
+            order: 0;
+        }
+        }
     }
 
     button:focus {
@@ -67,6 +74,7 @@
                     @include tablet {
                         top: 140%;
                     }
+
                     @include laptop {
                         top: 170%;
                     }

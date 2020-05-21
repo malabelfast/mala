@@ -17,7 +17,7 @@ body#about {
     .interactive {
         .interactive_container {
             background: url(.././img/about/interactiveportrait.png);
-            background-size: cover;
+            background-size: cover!important;
             @include tablet {
             background: url(.././img/about/interactivelandscape.png); 
             }

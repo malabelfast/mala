@@ -28,6 +28,14 @@
   background: none;
   border: none;
 }
+.interactive button:nth-child(1) {
+  order: 3;
+}
+@media (min-width: 768px) {
+  .interactive button:nth-child(1) {
+    order: 0;
+  }
+}
 .interactive button:focus {
   outline: none;
   outline: none;
@@ -204,9 +212,10 @@ section {
 }
 
 .line {
+  padding-left: 1rem;
+  padding-right: 0.6rem;
   background: linear-gradient(transparent, transparent 35%, #C1DCAD 35%, #C1DCAD 65%, transparent 65%);
   width: fit-content;
-  padding-left: 0.4rem;
 }
 .line.left {
   margin-left: -1rem;
@@ -216,8 +225,6 @@ section {
 }
 @media (min-width: 768px) {
   .line {
-    padding-left: 1rem;
-    padding-right: 0.6rem;
     margin-left: -1rem !important;
   }
 }
@@ -240,38 +247,23 @@ h1.line {
 .feature h2 span {
   background: linear-gradient(transparent, transparent 35%, white 35%, white 65%, transparent 65%);
   width: fit-content;
-  padding-left: 0.3rem;
-}
-@media (min-width: 768px) {
-  .feature h2 span {
-    padding-left: 1rem;
-    padding-right: 0.6rem;
-    margin: -1rem;
-  }
+  padding-left: 1rem;
+  padding-right: 0.6rem;
+  margin: -1rem;
 }
 
 .gridof3 h2 span {
   background: linear-gradient(transparent, transparent 35%, #C1DCAD 35%, #C1DCAD 65%, transparent 65%);
-  padding: auto;
-}
-@media (min-width: 768px) {
-  .gridof3 h2 span {
-    margin: -1rem;
-    padding-left: 1rem;
-    padding-right: 0.6rem;
-  }
+  padding-left: 1rem;
+  padding-right: 0.6rem;
+  margin: -1rem;
 }
 
 .comingsoon h2 {
   color: #e6e6e6;
   padding: 10vh 0;
   text-align: center;
-  font-size: 5rem;
-}
-@media (min-width: 768px) {
-  .comingsoon h2 {
-    font-size: 10rem;
-  }
+  font-size: 10rem;
 }
 
 .home_header .home_header_container {
@@ -305,17 +297,12 @@ h1.line {
 }
 
 .banner .banner_container {
-  padding: 3rem;
+  padding: 6rem;
   color: white;
   background-color: #456551;
   background-image: url(../img/foliage/branchl.png);
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
-}
-@media (min-width: 768px) {
-  .banner .banner_container {
-    padding: 6rem;
-  }
 }
 
 .gridof3 .col-12 {
@@ -424,7 +411,7 @@ body#about .feature .feature_img {
 }
 body#about .interactive .interactive_container {
   background: url(.././img/about/interactiveportrait.png);
-  background-size: cover;
+  background-size: cover !important;
 }
 @media (min-width: 768px) {
   body#about .interactive .interactive_container {
