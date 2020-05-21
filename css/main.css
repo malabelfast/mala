@@ -212,10 +212,9 @@ section {
 }
 
 .line {
-  padding-left: 1rem;
-  padding-right: 0.6rem;
   background: linear-gradient(transparent, transparent 35%, #C1DCAD 35%, #C1DCAD 65%, transparent 65%);
   width: fit-content;
+  padding-left: 0.4rem;
 }
 .line.left {
   margin-left: -1rem;
@@ -225,6 +224,8 @@ section {
 }
 @media (min-width: 768px) {
   .line {
+    padding-left: 1rem;
+    padding-right: 0.6rem;
     margin-left: -1rem !important;
   }
 }
@@ -247,23 +248,38 @@ h1.line {
 .feature h2 span {
   background: linear-gradient(transparent, transparent 35%, white 35%, white 65%, transparent 65%);
   width: fit-content;
-  padding-left: 1rem;
-  padding-right: 0.6rem;
-  margin: -1rem;
+  padding-left: 0.3rem;
+}
+@media (min-width: 768px) {
+  .feature h2 span {
+    padding-left: 1rem;
+    padding-right: 0.6rem;
+    margin: -1rem;
+  }
 }
 
 .gridof3 h2 span {
   background: linear-gradient(transparent, transparent 35%, #C1DCAD 35%, #C1DCAD 65%, transparent 65%);
-  padding-left: 1rem;
-  padding-right: 0.6rem;
-  margin: -1rem;
+  padding: auto;
+}
+@media (min-width: 768px) {
+  .gridof3 h2 span {
+    margin: -1rem;
+    padding-left: 1rem;
+    padding-right: 0.6rem;
+  }
 }
 
 .comingsoon h2 {
   color: #e6e6e6;
   padding: 10vh 0;
   text-align: center;
-  font-size: 10rem;
+  font-size: 5rem;
+}
+@media (min-width: 768px) {
+  .comingsoon h2 {
+    font-size: 10rem;
+  }
 }
 
 .home_header .home_header_container {
